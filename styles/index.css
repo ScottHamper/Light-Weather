@@ -1,8 +1,3 @@
-body {
-	width: 500px;
-	height: 200px;
-}
-
 .gbackground {
 	/* You would think `display: block` would suffice,
 	   however, setting `opacity="0%"` causes g:text
