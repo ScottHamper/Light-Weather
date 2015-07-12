@@ -32,4 +32,4 @@ Just like in any web environment, connecting to remote services insecurely (with
 
 With that being said, it is still possible to create safe desktop gadgets. Light Weather gets its data from Yahoo's public XML API over HTTPS. By using HTTPS, the risk of being man-in-the-middled is mitigated. By consuming an XML API, Light Weather avoids executing any JavaScript returned from a remote source, thus mitigating the risk of a code-injection attack.
 
-Ideally, you should still take a moment to audit the code and verify that it is safe to use. If you discover any security related issues, please let me know by creating an issue on GitHub!
+Ideally, you should still take a moment to audit the code and verify that it is safe to use. If you discover any security related issues, please let me know by [creating an issue on GitHub](https://github.com/ScottHamper/Light-Weather/issues)!
