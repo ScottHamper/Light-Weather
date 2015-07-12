@@ -10,7 +10,7 @@ Light Weather is a minimalist weather desktop gadget for Windows 7.
 ### From Source
 1. [Download a copy of the repo](https://github.com/ScottHamper/Light-Weather/archive/master.zip)
 2. Zip up the source files, making sure that they're in the root of the archive
-3. Rename the zip to a ".gadget" file extension
+3. Rename the zip to "lightweather.gadget", changing the file type
 4. Double click and install it
 
 ## Configuration
