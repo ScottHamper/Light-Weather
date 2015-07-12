@@ -1,0 +1,17 @@
+body {
+	width: 500px;
+	height: 200px;
+}
+
+.gbackground {
+	/* You would think `display: block` would suffice,
+	   however, setting `opacity="0%"` causes g:text
+	   elements to have an outline that is offset
+	   from their fill. So absolute positioning it is.
+	*/
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}

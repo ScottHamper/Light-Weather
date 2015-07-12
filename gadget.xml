@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gadget>
+  <name>Light Weather</name>
+  <version>1.0.0.0</version>
+  <copyright>Public Domain</copyright>
+  <author name="Scott Hamper">
+    <info url="http://www.scotthamper.com" />
+  </author>
+  <description>
+    A minimalist weather gadget using Yahoo's public weather API.
+  </description>
+  <icons>
+    <icon height="64" width="64" src="icon.png" />
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" src="index.html" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+      <autoscaleDPI>false</autoscaleDPI>
+    </host>
+  </hosts>
+</gadget>

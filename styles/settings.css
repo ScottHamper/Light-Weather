@@ -1,0 +1,74 @@
+body {
+    width: 300px; /* 300px is max width? */
+    height: 290px;
+    margin: 0;
+}
+
+/* Applying margin or padding directly to the body element results in content
+   getting cut off in the settings pane. I think what's happening is that the
+   body width is being used as the absolute width (ignoring padding/margin)
+   of the pane's container, as well as the width of the body in the HTML
+   document. Margin and padding are added to the body width when rendering
+   the HTML document, but the container is only as wide as the body width.
+   THAT'S DUMB.
+
+   Also, `box-sizing: border-box` on body doesn't work. */
+.body-wrapper {
+    padding: 0 10px;
+}
+
+fieldset {
+    width: 114px;
+    padding: 10px;
+    margin: 0;
+}
+
+.fieldset-full {
+    width: 256px;
+}
+
+fieldset legend {
+    margin: 0 0 5px 16px;
+    font-weight: bold;
+}
+
+.fieldset-full legend {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-field {
+    margin: 8px 0;
+}
+
+.form-field-location {
+    text-align: center;
+}
+
+.form-field-location label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-field-location input {
+    width: 260px;
+    margin: 8px 0;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Cannot align text when using `footer` element, so forced to use class instead. */
+.footer {
+    text-align: center;
+}
+
+.api-attribution {
+    padding: 10px 0;
+}
+
+a img {
+    border: none;
+}
