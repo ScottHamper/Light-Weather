@@ -1,6 +1,11 @@
 # Light Weather
 Light Weather is a minimalist weather desktop gadget for Windows 7.
 
+## Screenshots
+![Light Weather on the desktop](/../screenshots/screenshots/light-weather.png?raw=true)
+
+![Light Weather settings](/../screenshots/screenshots/light-weather-settings.png?raw=true)
+
 ## Installation
 ### From Source
 1. [Download a copy of the repo](https://github.com/ScottHamper/Light-Weather/archive/master.zip)
