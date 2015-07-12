@@ -26,10 +26,10 @@ After installing the gadget, the source files should be located at:
 Simply modify the config.js defaults, close any open instances of the gadget, and load a new instance.
 
 ## Word of Warning
-Microsoft has officially discontinued Windows gadgets due to security concerns. Running malicious gadgets will certainly cause you trouble (like all malicious software), but an issue remains even for well-intentioned gadgets: man-in-the-middle and code injection attacks.
+Microsoft has officially [discontinued Windows gadgets](http://windows.microsoft.com/en-us/windows/gadgets) due to security concerns. Running malicious gadgets will certainly cause you trouble (like all malicious software), but an issue remains even for well-intentioned gadgets: [man-in-the-middle](https://www.owasp.org/index.php/Man-in-the-middle_attack) and [code injection](https://www.owasp.org/index.php/Code_Injection) attacks.
 
 Just like in any web environment, connecting to remote services insecurely (without TLS) opens up the possibility of a man-in-the-middle being able to inject code. However, the problem is exacerbated with Windows gadgets due to the fact that JavaScript running inside of a gadget is not sandboxed the same way as in a browser. This can potentially be exploited to allow an attacker to execute arbitrary code on your computer (you get pwned).
 
-With that being said, it is still possible to create safe desktop gadgets. Light Weather gets its data from Yahoo's public XML API over HTTPS. By using HTTPS, the risk of being man-in-the-middled is mitigated. By consuming an XML API, Light Weather avoids executing any JavaScript returned from a remote source, thus mitigating the risk of a code-injection attack.
+With that being said, it is still possible to create safe desktop gadgets. Light Weather gets its data from [Yahoo's public XML API](https://developer.yahoo.com/weather/) over HTTPS. By using HTTPS, the risk of being man-in-the-middled is mitigated. By consuming an XML API, Light Weather avoids executing any JavaScript returned from a remote source, thus mitigating the risk of a code-injection attack.
 
 Ideally, you should still take a moment to audit the code and verify that it is safe to use. If you discover any security related issues, please let me know by [creating an issue on GitHub](https://github.com/ScottHamper/Light-Weather/issues)!
